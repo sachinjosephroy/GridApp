@@ -25,7 +25,7 @@ public class Grid_2 {
 		// nodeUrl = "http://192.168.1.226:5566/wd/hub";
 		DesiredCapabilities capability = null;
 		
-		if(remoteURL.equals("http://192.168.1.207:5568/wd/hub")) {
+		if(remoteURL.equals("http://192.168.1.240:5567/wd/hub")) {
 			capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
 		}

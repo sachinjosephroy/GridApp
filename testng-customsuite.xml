@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" thread-count="4" parallel="tests">
   <test verbose="2" name="Win7">
-    
+    <parameters>
+  		<parameter name="browserName" value="chrome" />
+  		<parameter name="remoteURL" value="http://192.168.1.226:5566/wd/hub" />
+    </parameters>
+    <parameters>
+  		<parameter name="browserName" value="chrome" />
+  		<parameter name="remoteURL" value="http://192.168.1.240:5567/wd/hub" />
+    </parameters>
     <parameters>
   		<parameter name="browserName" value="chrome" />
   		<parameter name="remoteURL" value="http://192.168.1.207:5568/wd/hub" />
