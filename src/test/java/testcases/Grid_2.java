@@ -22,10 +22,10 @@ public class Grid_2 {
 	@Parameters({"browserName", "remoteURL"})
 	public void setUp(String browserName, String remoteURL) throws MalformedURLException {
 		baseurl = "http://newtours.demoaut.com/";
-		nodeUrl = "http://192.168.1.226:5566/wd/hub";
+		// nodeUrl = "http://192.168.1.226:5566/wd/hub";
 		DesiredCapabilities capability = null;
 		
-		if(browserName.equalsIgnoreCase("chrome")) {
+		if(remoteURL.equals("http://192.168.1.207:5568/wd/hub")) {
 			capability = DesiredCapabilities.chrome();
 			capability.setBrowserName("chrome");
 		}
@@ -35,7 +35,7 @@ public class Grid_2 {
 			capability.setBrowserName("firefox");
 		}*/
 		
-		capability.setPlatform(Platform.WIN10);
+		capability.setPlatform(Platform.WINDOWS);
 		driver = new RemoteWebDriver(new URL(remoteURL), capability);
 	}
 	
